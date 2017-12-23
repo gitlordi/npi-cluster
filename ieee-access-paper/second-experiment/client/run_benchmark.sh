@@ -25,7 +25,7 @@ for CONCURRENCY in $(seq $INITIAL_CONCURRENCY $STEP $FINAL_CONCURRENCY); do
 		# Use your command here
 
 		# Test run
-		siege -c $CONCURRENCY -b -t $TIME -f $LOGFILE &> $DESTINO/siege-out-$CONCORRENCIA-$RODADA.txt
+		siege -c $CONCURRENCY -b -t $TIME -f $LOGFILE &> $DESTINATION/siege-out-$CONCURRENCY-$ROUND.txt
 
 		# Stop energy measuring
 		# Use your command here
